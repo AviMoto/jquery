@@ -3,7 +3,7 @@
 #catalog-page {
 	width: 45%;
 	color: #000000;
-	
+	float:left;
 }
 
 .clearfix {
@@ -84,4 +84,15 @@
 	transition: all 120ms cubic-bezier(0, 0, 0.58, 1.0);
 	width: 158px;
 	line-height: 1.2em;
+}
+
+#shoppingCart {
+	float: right;
+	width: 30%;
+	border: solid 2px #000000;
+	border-radius: 5%;
+}
+
+li .ui-icon {
+	display: inline-block;
 }
