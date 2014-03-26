@@ -10,11 +10,13 @@ function getPrice(line){
  */
 $(function() {
 	var Checkout = (function(){
+		this.cost =0;
 		return {
 			checkout: function(totalCost){
 				try{
 					if(window.localStorage){
 						localStorage["totalCost"] = totalCost;
+						cost = totalCost;
 						window.location.href = "checkout.html";
 					}
 				} catch (e) {
